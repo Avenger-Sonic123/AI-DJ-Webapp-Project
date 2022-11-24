@@ -74,8 +74,8 @@ function gotPoses(results)
     {
 
         scoreLeftWrist = results[0].pose.keypoints[9].score;
-       // scoreRightWrist = results[0].pose.keypoints[10].score;
-        console.log("Score for Left Wrist is " + scoreLeftWrist) //+ ", Score for Right Wrist is " + scoreRightWrist);
+        scoreRightWrist = results[0].pose.keypoints[10].score;
+        console.log("Score for Left Wrist is " + scoreLeftWrist + ", Score for Right Wrist is " + scoreRightWrist);
         
         console.log(results);
 
@@ -87,12 +87,12 @@ function gotPoses(results)
 
         console.log(leftWristY);
 
-       // rightWristX = results[0].pose.rightWrist.x;
+       rightWristX = results[0].pose.rightWrist.x;
 
-       // console.log(rightWristX);
+       console.log(rightWristX);
 
-        //rightWristY = results[0].pose.rightWrist.y;
+       rightWristY = results[0].pose.rightWrist.y;
 
-       // console.log(rightWristY);
+       console.log(rightWristY);
     }
 }
